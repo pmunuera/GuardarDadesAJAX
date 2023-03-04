@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerSign">
+   <children>
+      <HBox layoutX="188.0" layoutY="141.0" prefHeight="100.0" prefWidth="263.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="102.0" text="Servidor: " />
+            <TextField fx:id="localhost" text="localhost" />
+         </children>
+      </HBox>
+      <HBox layoutX="188.0" layoutY="250.0" prefHeight="100.0" prefWidth="263.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="102.0" text="Port: " />
+            <TextField fx:id="port" text="3000" />
+         </children>
+      </HBox>
+      <Button layoutX="508.0" layoutY="300.0" mnemonicParsing="false" onAction="#enter" text="Connectar" />
+      <HBox layoutX="91.0" layoutY="26.0" prefHeight="74.0" prefWidth="97.0">
+         <children>
+            <ProgressIndicator fx:id="loading" prefHeight="70.0" prefWidth="32.0" visible="false" />
+         </children>
+      </HBox>
+      <HBox layoutX="188.0" layoutY="35.0" prefHeight="100.0" prefWidth="263.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="103.0" text="Protocol:" />
+            <TextField fx:id="protocol" text="http" />
+         </children>
+      </HBox>
+      <Label fx:id="txtError" layoutX="292.0" layoutY="18.0" prefHeight="17.0" prefWidth="299.0" text="Label" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>
