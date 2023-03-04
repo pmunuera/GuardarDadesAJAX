@@ -11,3 +11,4 @@ Captura amb JavaFX
 Captura amb Web
 
 <img src="./ScreenshotWeb.png" width="400">
+"# GuardarDadesAJAX" 
